@@ -1,15 +1,23 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+/*
+  DOCUMENTAÇÃO GERAL:
+  Este CSS foi atualizado para um design moderno com tema de natureza.
+  - Paleta de cores baseada em verdes e tons terrosos.
+  - Efeito "vidro fosco" (glassmorphism) nos containers.
+  - Tipografia e sombras refinadas para melhor legibilidade e estética.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
-  color: saddlebrown;
+  line-height: 1.7; /* AJUSTADO: Melhora a legibilidade */
+  color: #4A4A4A; /* AJUSTADO: Cinza escuro para melhor contraste */
 
-  background-image: url('../imagens/Imagem\ Background.png');
+  background-image: url('../imagens/Imagem Background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,35 +31,36 @@ header, main {
   margin: 0 auto;
 }
 
-header {
-  background-color:  rgba(255, 255, 255, 0.9);
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-  
-main section {
-  background-color:  rgba(255, 255, 255, 0.9);
+/* Efeito de "vidro fosco" para os containers */
+header, main section {
+  background-color: rgba(255, 255, 255, 0.65); /* AJUSTADO: Mais transparente */
+  backdrop-filter: blur(10px); /* NOVO: O efeito de desfoque */
+  -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
   padding: 25px;
   margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 12px; /* AJUSTADO: Bordas mais arredondadas */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* NOVO: Borda sutil */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* AJUSTADO: Sombra mais suave */
 }
 
-h1{
-  color: #2c5b8c;
+header {
+  margin-top: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #2E4636; /* AJUSTADO: Verde floresta escuro */
   margin-bottom: 15px;
-  font-size: 50px;
+  font-size: 2.8rem; /* AJUSTADO: Tamanho em 'rem' para flexibilidade */
+  font-weight: 600; /* AJUSTADO: Peso da fonte */
 }
 
 h2 {
-  color: #2c5b8c ;
+  color: #2E4636; /* AJUSTADO: Verde floresta escuro */
   margin-top: 0;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom:  2px solid #e0e0e0;;
+  border-bottom: 1px solid #C9D8C5; /* AJUSTADO: Linha mais suave com cor natural */
 }
 
 p {
@@ -60,12 +69,12 @@ p {
 }
 
 strong {
-  color: #333;
+  color: #5D4037; /* AJUSTADO: Tom de marrom mais sóbrio */
 }
 
 .galeria-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
@@ -74,25 +83,27 @@ strong {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .galeria-container img:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
 .mapa-container iframe {
   display: block;
   width: 100%;
+  border-radius: 8px; /* NOVO: Bordas arredondadas para o mapa */
 }
+
 footer {
   width: 100%;
-  color: saddlebrown;
+  color: #4A4A4A;
   text-align: center;
   padding: 25px 20px;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .social-icons {
@@ -100,20 +111,20 @@ footer {
 }
 
 .social-icons a {
-    color: #2c5b8c;
-    font-size: 1.8rem; 
-    margin: 0 15px; 
-    transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block; 
+  color: #2E4636; /* AJUSTADO: Verde floresta escuro */
+  font-size: 1.8rem;
+  margin: 0 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
 }
 
-.social-icons a: :hover {
-  color:  #3e7d5a ; 
-  transform: translateY(-3px); 
-} 
+.social-icons a:hover { /* CORRIGIDO: Seletor com dois pontos (::) estava errado */
+  color: #5D4037; /* AJUSTADO: Cor de hover marrom */
+  transform: translateY(-3px);
+}
 
 .copyright {
-  font-size: 10px;
+  font-size: 0.8rem; /* AJUSTADO */
   margin: 0;
   display: flex;
   justify-content: center;
@@ -128,24 +139,92 @@ footer {
   vertical-align: middle;
 }
 
-@media (max-width: 768px){
+/* Media Query para telas menores (Responsividade) */
+@media (max-width: 768px) {
+  body {
+    padding: 0; /* AJUSTADO: Evita padding duplicado */
+  }
 
-body{ 
-  padding: 15px;
+  header, main {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem; /* CORRIGIDO: 10px era muito pequeno */
+  }
+
+  .galeria-container {
+    grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+  }
+
+  p {
+    text-align: left;
+  }
 }
-header, main {
-  padding: 15px;
-}
-h1 {
-  font-size: 10px;
-}
-.galeria-container{
-  grid-template-columns: 1fr;
-}
-p {
-  text-align: left;
-}
+/* --- NOVO: Estilos para o Modal da Galeria --- */
+
+/* Adiciona um cursor de ponteiro para indicar que as imagens são clicáveis */
+.galeria-imagem {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
+.galeria-imagem:hover {
+  opacity: 0.8;
+}
 
-  
+/* O container do modal (fundo preto semi-transparente) */
+.modal-container {
+  display: none; /* Escondido por padrão */
+  position: fixed; /* Fica fixo na tela */
+  z-index: 1000; /* Fica na frente de tudo */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Permite scroll se a imagem for muito grande */
+  background-color: rgba(0, 0, 0, 0.9);
+  animation: fadeIn 0.5s; /* Animação de entrada */
+}
+
+/* A imagem dentro do modal */
+.modal-conteudo {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-width: 90%;
+  max-height: 85vh; /* Altura máxima para não cortar em telas menores */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* O botão de fechar (X) */
+.modal-fechar {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.modal-fechar:hover,
+.modal-fechar:focus {
+  color: #bbb;
+  text-decoration: none;
+}
+
+/* Animação de fade in */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Classe para travar o scroll do body quando o modal estiver aberto */
+.modal-aberto {
+  overflow: hidden;
+}
