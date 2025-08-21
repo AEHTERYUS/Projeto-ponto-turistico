@@ -1,6 +1,4 @@
-
-
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,9 +6,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.7; 
-  color: #4A4A4A; 
-
+  line-height: 1.7;
+  color: #4A4A4A;
   background-image: url('../imagens/Imagem Background.png');
   background-size: cover;
   background-position: center;
@@ -25,16 +22,15 @@ header, main {
   margin: 0 auto;
 }
 
-
 header, main section {
-  background-color: rgba(255, 255, 255, 0.65); 
-  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 25px;
   margin-bottom: 30px;
-  border-radius: 12px; 
-  border: 1px solid rgba(255, 255, 255, 0.18); 
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); 
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -43,17 +39,18 @@ header {
 }
 
 h1 {
-  color: #2E4636; 
+  color: #2E4636;
   margin-bottom: 15px;
-  font-size: 2.8rem; 
-  font-weight: 600; 
+  font-size: 2.8rem;
+  font-weight: 600;
+}
 
 h2 {
-  color: #2E4636; 
+  color: #2E4636;
   margin-top: 0;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #C9D8C5; 
+  border-bottom: 1px solid #C9D8C5;
 }
 
 p {
@@ -62,7 +59,7 @@ p {
 }
 
 strong {
-  color: #5D4037; 
+  color: #5D4037;
 }
 
 .galeria-container {
@@ -88,7 +85,7 @@ strong {
 .mapa-container iframe {
   display: block;
   width: 100%;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 footer {
@@ -104,15 +101,15 @@ footer {
 }
 
 .social-icons a {
-  color: #2E4636; 
+  color: #2E4636;
   font-size: 1.8rem;
   margin: 0 15px;
   transition: color 0.3s ease, transform 0.3s ease;
   display: inline-block;
 }
 
-.social-icons a:hover { 
-  color: #5D4037; 
+.social-icons a:hover {
+  color: #5D4037;
   transform: translateY(-3px);
 }
 
@@ -126,16 +123,15 @@ footer {
 }
 
 .footer-logo {
-  height: 150px;
+  height: 196px;
   width: auto;
   margin: 0 0.5em;
   vertical-align: middle;
 }
 
-
 @media (max-width: 768px) {
   body {
-    padding: 0; 
+    padding: 0;
   }
 
   header, main {
@@ -143,7 +139,7 @@ footer {
   }
 
   h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   .galeria-container {
@@ -164,27 +160,25 @@ footer {
   opacity: 0.8;
 }
 
-
 .modal-container {
-  display: none; 
-  position: fixed; 
-  z-index: 1000; 
+  display: none;
+  position: fixed;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; 
+  overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
   animation: fadeIn 0.5s;
 }
-
 
 .modal-conteudo {
   margin: auto;
   display: block;
   width: auto;
   max-width: 90%;
-  max-height: 85vh; 
+  max-height: 85vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -208,12 +202,10 @@ footer {
   text-decoration: none;
 }
 
-
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
 }
-
 
 .modal-aberto {
   overflow: hidden;
