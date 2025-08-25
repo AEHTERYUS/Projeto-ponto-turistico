@@ -18,15 +18,17 @@ body {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  
   min-height: 100vh;
+  
+  align-items: center;
 }
 
 header, main {
   width: 100%;
   max-width: 900px;
   padding: 20px;
-  margin: 0 auto;
+  
+  margin: 0;
 }
 
 header, main section {
