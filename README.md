@@ -1,6 +1,6 @@
 # Projeto Salto do Pântano - Página Informativa
 
-![IMPERIUS CREATOR](https://placehold.co/80x40/2c5b8c/ffffff?text=LOGO)
+![AEHTERYUS TECNOLOGIA INOVAÇÂO](https://placehold.co/80x40/2c5b8c/ffffff?text=LOGO)
 
 Uma página web responsiva e informativa sobre o Salto do Pântano, um ponto turístico localizado na cidade de Descalvado-SP. Este projeto foi desenvolvido como um exercício prático de desenvolvimento front-end, utilizando HTML5 e CSS3 para criar uma experiência de usuário agradável e funcional.
 
@@ -8,7 +8,7 @@ Uma página web responsiva e informativa sobre o Salto do Pântano, um ponto tur
 
 Você pode visualizar a página em funcionamento através do link abaixo (se hospedado no GitHub Pages):
 
-[Clique aqui para ver a página](https://imperiuscreator.github.io/salto-do-pantano/)
+[Clique aqui para ver a página](https://aehteryus.github.io/salto-do-pantano/)
 
 ## 📸 Captura de Tela
 
@@ -30,8 +30,8 @@ Você pode visualizar a página em funcionamento através do link abaixo (se hos
   * **Font Awesome:** Para os ícones vetoriais das redes sociais no rodapé.
 
 
-Projeto desenvolvido por **IMPERIUS CREATOR**.
+Projeto desenvolvido por **Aeheteryus**.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gilberto-gonçalves-93ba5936b)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ImperiusCreator)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Imperius_Creator)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aehteryus)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@aehteryus)

@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +9,14 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.7;
   color: #4A4A4A;
+  
   background-image: url('../imagens/Imagem Background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; 
 }
+
 
 header, main {
   width: 100%;
@@ -22,10 +25,11 @@ header, main {
   margin: 0 auto;
 }
 
+
 header, main section {
-  background-color: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.65); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
   padding: 25px;
   margin-bottom: 30px;
   border-radius: 12px;
@@ -38,6 +42,7 @@ header {
   text-align: center;
 }
 
+/* --- TIPOGRAFIA --- */
 h1 {
   color: #2E4636;
   margin-bottom: 15px;
@@ -62,6 +67,7 @@ strong {
   color: #5D4037;
 }
 
+/* --- GALERIA DE IMAGENS --- */
 .galeria-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -75,19 +81,23 @@ strong {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .galeria-container img:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  opacity: 0.8;
 }
 
+/* --- MAPA --- */
 .mapa-container iframe {
   display: block;
   width: 100%;
   border-radius: 8px;
 }
 
+/* --- RODAPÉ --- */
 footer {
   width: 100%;
   color: #4A4A4A;
@@ -123,42 +133,12 @@ footer {
 }
 
 .footer-logo {
-  height: 196px;
+  height: 196px; 
   width: auto;
   margin: 0 0.5em;
   vertical-align: middle;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 0;
-  }
-
-  header, main {
-    padding: 15px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .galeria-container {
-    grid-template-columns: 1fr;
-  }
-
-  p {
-    text-align: left;
-  }
-}
-
-.galeria-imagem {
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-
-.galeria-imagem:hover {
-  opacity: 0.8;
-}
 
 .modal-container {
   display: none;
@@ -207,6 +187,25 @@ footer {
   to {opacity: 1;}
 }
 
-.modal-aberto {
-  overflow: hidden;
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  header, main {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .galeria-container {
+    grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+  }
+
+  p {
+    text-align: left;
+  }
 }
