@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
+html {
+  /* A altura foi removida daqui para uma melhor compatibilidade */
 }
 
 body {
@@ -16,9 +16,11 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* A propriedade 'background-attachment: fixed' foi removida por ser instável no iOS */
   display: flex;
   flex-direction: column;
+  /* Esta é uma forma mais moderna e confiável de garantir a altura total */
+  min-height: 100vh;
 }
 
 header, main {
@@ -205,4 +207,3 @@ footer {
     text-align: left;
   }
 }
-
