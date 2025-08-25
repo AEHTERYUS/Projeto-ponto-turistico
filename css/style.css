@@ -5,7 +5,7 @@
 }
 
 html {
-  /* A altura foi removida daqui para uma melhor compatibilidade */
+ 
 }
 
 body {
@@ -16,10 +16,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* A propriedade 'background-attachment: fixed' foi removida por ser instável no iOS */
   display: flex;
   flex-direction: column;
-  /* Esta é uma forma mais moderna e confiável de garantir a altura total */
+  
   min-height: 100vh;
 }
 
@@ -68,6 +67,40 @@ p {
 
 strong {
   color: #5D4037;
+}
+
+
+.historia-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.historia-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.historia-imagens {
+  flex: 1;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.historia-imagens img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.historia-imagens img:hover {
+  transform: scale(1.05);
 }
 
 .galeria-container {
@@ -201,6 +234,16 @@ footer {
 
   .galeria-container {
     grid-template-columns: 1fr;
+  }
+  
+  
+  .historia-container {
+    flex-direction: column;
+  }
+
+  .historia-imagens {
+    grid-template-columns: 1fr; 
+    width: 100%;
   }
 
   p {
